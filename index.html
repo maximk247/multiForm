@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="account-plus121.png" type="image/x-icon">    
+    <title>Registration</title>
+</head>
+<body>
+    <form data-multi-step class="multi-step-form">
+        <div class="card" data-step>
+            <h3 class="step-title">Create your account</h3>
+            <div class="form-group">
+                <input type="email" required name="email" id="email" placeholder="Email">
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" id="password" placeholder="Password">
+            </div>
+            <button type="button" data-next class="btn next">Next</button>
+        </div>
+        <div class="card" data-step>
+            <h3 class="step-title">Your location</h3>
+            <div class="form-group">
+                <input type="text" name="address" id="address" placeholder="Adress">
+            </div>
+            <div class="form-group">
+                <input type="text" name="city" id="city" placeholder="City">
+            </div>
+            <div class="form-group">
+                <input type="text" name="zipcode" id="zipcode" placeholder="Zip code">
+            </div>
+            <button type="button" data-previous class="btn">Previous</button>
+            <button type="button" data-next class="btn next">Next</button>
+        </div> 
+        <div class="card" data-step>
+            <h3 class="step-title">Your full name</h3>
+            <div class="form-group">
+                <input type="text" name="firstName" id="firstName" placeholder="First name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="lastName" id="lastName" placeholder="Last name">
+            </div>
+            
+            <button type="button" data-previous class="btn">Previous</button>
+            <button type="submit" data-submit class="btn next">Submit</button>
+        </div>
+    </form>
+</body>
+</html>
